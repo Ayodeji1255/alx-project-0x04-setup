@@ -2,7 +2,7 @@ import Link from "next/link";
 import Button from "../common/Button";
 import { usePathname } from "next/navigation";
 import { useCount } from "@/context/CountContext";
-
+console.log("Header component loaded");
 const Header: React.FC = () => {
   const pathname = usePathname();
   const { count } = useCount();
